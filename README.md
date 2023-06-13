@@ -4,7 +4,9 @@
 ## Build
 
 $ ```git clone https://notabug.org/tamper000/tor_autobridge```
+
 $ ```docker build -t tor_autobridges tor_autobridges```
+
 $ ```rm -rf tor_autobridge```
 
 ## Run
