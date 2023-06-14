@@ -5,13 +5,13 @@
 
 $ ```git clone https://notabug.org/tamper000/tor_autobridge```
 
-$ ```docker build -t tor_autobridges tor_autobridge```
+$ ```docker build -t tor_autobridge tor_autobridge```
 
 $ ```rm -rf tor_autobridge```
 
-## Run
+## Run and set autostartup
 ##### Proxy only
-$ ```docker run -d -p 9050:9050 tor_autobridges```
+$ ```docker run -d -p 9050:9050 --restart=always tor_autobridge```
 
 ##### Proxy and control port
-$ ```docker run -d -p 9050:9050 -p 9051:9051 tor_autobridges```
+$ ```docker run -d -p 9050:9050 -p 9051:9051 --restart=always tor_autobridge```
